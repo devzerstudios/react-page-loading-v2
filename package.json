@@ -2,48 +2,19 @@
   "name": "react-page-loading-v2",
   "version": "1.0.8",
   "description": "React page loading components using to display a loading spin until the page loads completely.",
-  "main": "dist/react-page-loading-v2.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint lib/*.jsx",
-    "prepush": "npm run lint",
-    "build": "webpack --config webpack.config.prod.js --output-filename react-page-loading-v2.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bunlong",
   "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.7.7",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^7.1.1",
-    "babel-polyfill": "^6.7.4",
-    "babel-preset-es2015": "6.24.0",
-    "babel-preset-react": "^6.11.1",
-    "babel-register": "^6.24.1",
-    "chai": "^3.5.0",
-    "clean-webpack-plugin": "^0.1.8",
-    "copy-webpack-plugin": "^2.1.1",
-    "coveralls": "^2.13.1",
-    "enzyme": "^2.8.0",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "file-loader": "^0.11.1",
-    "husky": "^0.13.3",
-    "jsdom": "^9.12.0",
-    "mocha": "^3.2.0",
-    "nyc": "^10.2.0",
-    "react-addons-test-utils": "^15.5.0",
-    "sinon": "^2.1.0",
-    "webpack": "^3.3.0",
-    "webpack-dev-server": "^2.5.1"
-  },
   "dependencies": {
     "prop-types": "^15.8.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
     "styled-components": "^5.3.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
   },
   "keywords": [
     "react-page-loading",
