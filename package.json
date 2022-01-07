@@ -2,12 +2,12 @@
   "name": "react-page-loading-v2",
   "version": "1.0.2",
   "description": "React page loading components using to display a loading spin until the page loads completely.",
-  "main": "dist/react-page-loading.js",
+  "main": "dist/react-page-loading-v2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint lib/*.jsx",
     "prepush": "npm run lint",
-    "build": "webpack --config webpack.config.prod.js --output-filename react-page-loading.js"
+    "build": "webpack --config webpack.config.prod.js --output-filename react-page-loading-v2.js"
   },
   "author": "Bunlong",
   "license": "MIT",

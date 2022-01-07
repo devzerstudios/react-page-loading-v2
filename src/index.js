@@ -9,7 +9,7 @@ import ResizeSpinLoader from "./resize-spin/ResizeSpinLoader";
 import RotateSpinLoader from "./rotate-spin/RotateSpinLoader";
 import SpinLoader from "./spin/SpinLoader";
 
-const PageLoading = ({ color, duration, size, loader, ...props }) => {
+const PageLoading = ({ color, duration, size, loader, children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const PageLoading = ({ color, duration, size, loader, ...props }) => {
     }
   }
 
-  return <div>{props.children}</div>;
+  return <div>{children}</div>;
 };
 
 PageLoading.propTypes = {
