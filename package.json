@@ -57,11 +57,11 @@
     "react"
   ],
   "bugs": {
-    "url": "https://github.com/codefacebook/react-page-loading/issues"
+    "url": "https://github.com/devzerstudio/react-page-loading-v2/issues"
   },
-  "homepage": "https://github.com/codefacebook/react-page-loading",
+  "homepage": "https://github.com/devzerstudio/react-page-loading-v2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codefacebook/react-page-loading"
+    "url": "https://github.com/devzerstudio/react-page-loading-v2"
   }
 }
