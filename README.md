@@ -1,32 +1,40 @@
-![react-page-loading](https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading.png)
+![react-page-loading-v2](https://github.com/devzerstudio/react-page-loading-v2/blob/main/images/react-page-loading.png)
 
-# react-page-loading [![version](https://img.shields.io/npm/v/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![downloads](https://img.shields.io/npm/dm/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+# react-page-loading [![version](https://img.shields.io/npm/v/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading-v2) [![downloads](https://img.shields.io/npm/dm/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading-v2) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-React page loading components using to display a loading spin until the page loads completely.
+React page loading using react functional components to display a loading spin until the page loads completely.
 
-We'd love to have your helping hand on contributions to react-page-loading by forking and sending a pull request!
+We'd love to have your helping hand on contributions to react-page-loading-v2 by forking and sending a pull request!
 
-<img src="https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading-features.gif" width="67%" alt="react-page-loading features">
+<img src="https://github.com/devzerstudio/react-page-loading-v2/blob/main/images/react-page-loading-features.gif" width="67%" alt="react-page-loading-v2 features">
 
 ## Features
 
-* Working with react-router
+- Working with react-router-dom
 
-* Working with react-router-redux
+- Working with react-router-redux
 
-* ... etc.
+- ... etc.
 
 ## Installation
 
+### npm
+
+```shell
+npm i react-page-loading-v2
 ```
-npm install react-page-loading --save
+
+### yarn
+
+```shell
+yarn add react-page-loading-v2
 ```
 
 ## Usage
 
 ```
 import React, { Component } from 'react'
-import Page from 'react-page-loading'
+import Page from 'react-page-loading-v2'
 
 export default class App extends Component {
   constructor(props) {
@@ -48,17 +56,17 @@ export default class App extends Component {
 
 ## Properties
 
-| Name          | Type             | Default value  |
-|:------------- |:---------------- |:-------------- |
-| loader        | PropTypes.string | bar            |
-| color         | PropTypes.string | #A9A9A9        |
-| size          | PropTypes.number | 4              |
-| duration      | PropTypes.number | 1              |
+| Name     | Type             | Default value |
+| :------- | :--------------- | :------------ |
+| loader   | PropTypes.string | bar           |
+| color    | PropTypes.string | #A9A9A9       |
+| size     | PropTypes.number | 4             |
+| duration | PropTypes.number | 1             |
 
 ### loader
 
 | Value         |
-|:------------- |
+| :------------ |
 | bar           |
 | bubble-spin   |
 | bubble        |
@@ -70,7 +78,7 @@ export default class App extends Component {
 
 ## Contributing
 
-We'd love to have your helping hand on contributions to react-chartjsx by forking and sending a pull request!
+We'd love to have your helping hand on contributions to react-page-loading-v2 by forking and sending a pull request!
 
 Your contributions are heartily ♡ welcome, recognized and appreciated. (✿◠‿◠)
 
@@ -78,4 +86,4 @@ Your contributions are heartily ♡ welcome, recognized and appreciated. (✿◠
 
 MIT License
 
-Copyright (c) 2018 [codefacebook](https://github.com/codefacebook), Maintained by [Bunlong](https://github.com/Bunlong)
+Copyright (c) 2022 [devzerstudio](https://github.com/devzerstudio), Maintained by [hashaaan](https://github.com/hashaaan)
