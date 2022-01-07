@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# yarn configuration
+package-lock.json
+
+# prettier configuration
+.prettierrc.js
+
+# example directories
+examples/
+
+# vscode configuration
+.vscode/
+
+# screenshots
+screenshots/
