@@ -2,19 +2,19 @@
   "name": "react-page-loading-v2",
   "version": "1.0.12",
   "description": "React page loading components using to display a loading spin until the page loads completely.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack-dev-server --mode production"
+    "build": "webpack --mode production --config webpack.config.js --output-filename index.js"
   },
-  "author": "Bunlong",
+  "author": "Devzer Studio",
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.8.1",
-    "styled-components": "^5.3.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.7",
@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^4.0.0",
     "file-loader": "^4.2.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",

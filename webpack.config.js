@@ -1,22 +1,21 @@
 const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, "src", "index.js"),
+  entry: "./index.js",
+  plugins: [new CleanWebpackPlugin()],
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "bundle.js",
-  },
-  devServer: {
-    contentBase: path.resolve(__dirname, "public"),
+    filename: "index.js",
+    path: path.resolve(__dirname, "dist"),
+    library: { name: "pageLoader", type: "umd" },
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules|bower_components)/,
-        options: {
-          presets: ["@babel/preset-env"],
-          plugins: ["@babel/plugin-transform-runtime"],
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
         },
       },
     ],
