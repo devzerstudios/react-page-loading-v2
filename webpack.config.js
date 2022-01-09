@@ -2,7 +2,7 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./index.js",
+  entry: path.resolve(__dirname, "src/index"),
   plugins: [new CleanWebpackPlugin()],
   output: {
     filename: "index.js",

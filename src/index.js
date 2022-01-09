@@ -9,7 +9,13 @@ import ResizeSpinLoader from "./resize-spin/ResizeSpinLoader";
 import RotateSpinLoader from "./rotate-spin/RotateSpinLoader";
 import SpinLoader from "./spin/SpinLoader";
 
-const PageLoading = ({ color, duration, size, loader, children }) => {
+export default function PageLoading({
+  color,
+  duration,
+  size,
+  loader,
+  children,
+}) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -76,7 +82,7 @@ const PageLoading = ({ color, duration, size, loader, children }) => {
   }
 
   return <div>{children}</div>;
-};
+}
 
 PageLoading.propTypes = {
   color: PropTypes.string,
@@ -91,5 +97,3 @@ PageLoading.defaultProps = {
   size: 4,
   loader: "bar",
 };
-
-export default PageLoading;
