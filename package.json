@@ -1,6 +1,6 @@
 {
   "name": "react-page-loading-v2",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "React page loading components using to display a loading spin until the page loads completely.",
   "main": "src/index.js",
   "scripts": {
