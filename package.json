@@ -8,6 +8,16 @@
     "dev": "webpack-dev-server --mode development",
     "build": "webpack-dev-server --mode production"
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/proposal-class-properties",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
   "author": "Bunlong",
   "license": "MIT",
   "dependencies": {
@@ -22,6 +32,10 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@babel/react": "^7.10.4",
+    "@babel/env": "^7.10.5",
+    "@babel/proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.5",
     "babel-loader": "^8.0.6",
     "file-loader": "^4.2.0",
     "webpack": "^4.43.0",
