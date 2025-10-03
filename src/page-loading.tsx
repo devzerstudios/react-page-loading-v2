@@ -1,5 +1,5 @@
 // src/PageLoading.tsx
-import * as React from "react";
+import { useEffect, useState } from "react";
 import ReactLoading from "react-loading";
 import type { LoadingProps } from "react-loading";
 
@@ -20,9 +20,9 @@ export const PageLoading: React.FC<PageLoadingProps> = ({
   children,
   ...rest
 }) => {
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timer = setTimeout(() => setLoading(false), duration);
     return () => clearTimeout(timer);
   }, [duration]);
