@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Output & typing
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    // Module/JSX (modern React & ESM)
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+
+    // DX & safety
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+
+    // Optional if you want .js files during migration
+    // "allowJs": true,
+    // "checkJs": false
+  },
+  "include": ["src", "src/types"]
+}

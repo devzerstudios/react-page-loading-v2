@@ -1,17 +1,32 @@
 # Dependency directories
 node_modules/
 
-# yarn configuration
+# Lockfiles
 package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
-# prettier configuration
-.prettierrc.js
+# Config & tooling
+.prettierrc
+.prettierrc.*
+.eslintrc
+.eslintrc.*
+tsconfig.json
+tsconfig.*.json
+tsup.config.ts
+babel.config.js
+webpack.config.js
 
-# example directories
+# Local/dev directories
 examples/
-
-# vscode configuration
 .vscode/
-
-# screenshots
 screenshots/
+images/
+
+# Build artifacts (we only want dist/)
+coverage/
+.nyc_output/
+
+# Misc
+*.log
+.DS_Store

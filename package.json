@@ -1,51 +1,66 @@
 {
   "name": "react-page-loading-v2",
   "version": "2.0.0",
-  "description": "React page loading components using to display a loading spin until the page loads completely.",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production --config webpack.config.js --output-filename index.js"
-  },
-  "author": "Devzer Studio",
+  "description": "React page loading components with TypeScript and React 19 support.",
   "license": "MIT",
-  "dependencies": {
-    "prop-types": "^15.8.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-loading": "^2.0.3"
+  "author": "Devzer Studio",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
   },
-  "devDependencies": {
-    "@babel/cli": "^7.16.7",
-    "@babel/core": "^7.16.7",
-    "@babel/plugin-transform-runtime": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
-    "@babel/preset-react": "^7.16.7",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^4.0.0",
-    "file-loader": "^4.2.0",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.2"
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "react-page-loading",
     "page-loading",
-    "page-load",
-    "page-loading-spin",
-    "page-load-spin",
+    "spinner",
+    "overlay",
+    "loading",
     "react",
-    "react-component",
-    "react-components",
-    "react"
+    "react-component"
   ],
-  "bugs": {
-    "url": "https://github.com/devzerstudios/react-page-loading-v2/issues"
+  "peerDependencies": {
+    "react": "^16.14.0 || ^17 || ^18 || ^19",
+    "react-dom": "^16.14.0 || ^17 || ^18 || ^19"
   },
-  "homepage": "https://github.com/devzerstudios/react-page-loading-v2",
+  "dependencies": {
+    "react-loading": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.5.0",
+    "tsup": "^8.0.0",
+    "vitest": "^2.0.0",
+    "@testing-library/react": "^16.0.0",
+    "eslint": "^9.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devzerstudios/react-page-loading-v2.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/devzerstudios/react-page-loading-v2/issues"
+  },
+  "homepage": "https://github.com/devzerstudios/react-page-loading-v2"
 }
