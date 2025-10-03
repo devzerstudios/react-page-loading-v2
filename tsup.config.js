@@ -8,5 +8,7 @@ export default defineConfig({
   clean: true,
   target: "es2020",
   treeshake: true,
-  external: ["react", "react-dom", "react/jsx-runtime"],
+  splitting: false, // libraries usually prefer single-file per entry
+  minify: false, // leave minification to app bundlers
+  external: ["react", "react-dom", "next"],
 });
