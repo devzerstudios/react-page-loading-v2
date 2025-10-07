@@ -43,17 +43,15 @@
     "react": "^16.14.0 || ^17 || ^18 || ^19",
     "react-dom": "^16.14.0 || ^17 || ^18 || ^19"
   },
-  "dependencies": {
-    "react-loading": "^2.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
     "typescript": "^5.5.0",
     "tsup": "^8.0.0",
     "vitest": "^2.0.0",
     "@testing-library/react": "^16.0.0",
-    "eslint": "^9.0.0",
+    "eslint": "^9",
     "@typescript-eslint/parser": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0"
   },

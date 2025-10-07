@@ -17,5 +17,5 @@
     "esModuleInterop": true,
     "types": ["react"]
   },
-  "include": ["src", "src/types"]
+  "include": ["src"]
 }

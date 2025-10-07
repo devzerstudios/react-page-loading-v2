@@ -11,5 +11,4 @@ export default defineConfig({
   splitting: false, // libraries usually prefer single-file per entry
   minify: false, // leave minification to app bundlers
   external: ["react", "react-dom", "next"],
-  noExternal: ["react-loading"]
 });

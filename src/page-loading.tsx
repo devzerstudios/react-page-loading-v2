@@ -1,17 +1,21 @@
-// src/PageLoading.tsx
-import { useEffect, useState } from "react";
-import ReactLoading from "react-loading";
-import type { LoadingProps } from "react-loading";
+import {
+  useEffect,
+  useState,
+  type FC,
+  type ReactNode,
+  type CSSProperties,
+} from "react";
+import { Spinner, type SpinnerProps, type SpinnerType } from "./spinners";
 
-export interface PageLoadingProps extends Omit<LoadingProps, "delay"> {
+export interface PageLoadingProps extends Omit<SpinnerProps, "type"> {
   /** How long to keep showing the loader (ms) */
   duration?: number;
-  children?: React.ReactNode;
-  /** Ensure 'type' matches react-loading’s accepted values */
-  type?: LoadingProps["type"];
+  /** Spinner style/type */
+  type?: SpinnerType;
+  children?: ReactNode;
 }
 
-export const PageLoading: React.FC<PageLoadingProps> = ({
+export const PageLoading: FC<PageLoadingProps> = ({
   duration = 1300,
   color = "#A9A9A9",
   height = 40,
@@ -27,7 +31,7 @@ export const PageLoading: React.FC<PageLoadingProps> = ({
     return () => clearTimeout(timer);
   }, [duration]);
 
-  const containerStyle: React.CSSProperties = {
+  const containerStyle: CSSProperties = {
     position: "absolute",
     left: "50%",
     top: "50%",
@@ -37,7 +41,7 @@ export const PageLoading: React.FC<PageLoadingProps> = ({
   if (loading) {
     return (
       <div style={containerStyle}>
-        <ReactLoading
+        <Spinner
           color={color}
           height={height}
           width={width}
@@ -50,3 +54,5 @@ export const PageLoading: React.FC<PageLoadingProps> = ({
 
   return <div>{children}</div>;
 };
+
+export default PageLoading;
