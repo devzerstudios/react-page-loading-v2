@@ -2,8 +2,8 @@
 
 # react-page-loading
 
-[![version](https://img.shields.io/npm/v/react-page-loading-v2.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading-v2)
-[![downloads](https://img.shields.io/npm/dm/react-page-loading-v2.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading-v2)
+[![version](https://img.shields.io/npm/v/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading)
+[![downloads](https://img.shields.io/npm/dm/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 React component that shows a loading spinner for a set duration, then reveals your content.  
