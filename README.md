@@ -1,6 +1,6 @@
-![react-page-loading-v2](https://raw.githubusercontent.com/devzerstudios/react-page-loading-v2/refs/heads/main/images/react-page-loading.png)
+![react-page-loading](https://raw.githubusercontent.com/devzerstudios/react-page-loading/refs/heads/main/images/react-page-loading.png)
 
-# react-page-loading-v2
+# react-page-loading
 
 [![version](https://img.shields.io/npm/v/react-page-loading-v2.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading-v2)
 [![downloads](https://img.shields.io/npm/dm/react-page-loading-v2.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading-v2)
@@ -9,7 +9,7 @@
 React component that shows a loading spinner for a set duration, then reveals your content.  
 Rewritten in **TypeScript** with support for **React 16.14 → 19**.
 
-<img src="https://raw.githubusercontent.com/devzerstudios/react-page-loading-v2/refs/heads/main/images/react-page-loading-features.gif" width="67%" alt="react-page-loading-v2 features">
+<img src="https://raw.githubusercontent.com/devzerstudios/react-page-loading/refs/heads/main/images/react-page-loading-features.gif" width="67%" alt="react-page-loading features">
 
 ---
 
@@ -27,13 +27,13 @@ Rewritten in **TypeScript** with support for **React 16.14 → 19**.
 
 ```bash
 # npm
-npm install react-page-loading-v2
+npm install react-page-loading
 
 # yarn
-yarn add react-page-loading-v2
+yarn add react-page-loading
 
 # pnpm
-pnpm add react-page-loading-v2
+pnpm add react-page-loading
 ```
 
 ---
@@ -42,7 +42,7 @@ pnpm add react-page-loading-v2
 
 ```tsx
 import React from "react";
-import PageLoading from "react-page-loading-v2";
+import PageLoading from "react-page-loading";
 
 export default function App() {
   return (
