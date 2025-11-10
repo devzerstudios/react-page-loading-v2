@@ -57,10 +57,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devzerstudios/react-page-loading-v2.git"
+    "url": "git+https://github.com/devzerstudios/react-page-loading.git"
   },
   "bugs": {
-    "url": "https://github.com/devzerstudios/react-page-loading-v2/issues"
+    "url": "https://github.com/devzerstudios/react-page-loading/issues"
   },
-  "homepage": "https://github.com/devzerstudios/react-page-loading-v2"
+  "homepage": "https://github.com/devzerstudios/react-page-loading"
 }
